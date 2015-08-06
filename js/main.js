@@ -64,7 +64,7 @@ var PageMain = {
                     }
                 });
 
-                $(document).on('click', '.ele-arrow', function(evt) {
+                $(document).on('click', '.arrow', function(evt) {
                     PageScroll.scrollDown();
                 });
             });
