@@ -165,19 +165,7 @@
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/weixinshare.js"></script>
+<script type="text/javascript" src="js/bgmusic.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-	$.ajax({
-		url:'background.mp3',
-		type:'get',
-		success:function(){
-			$("#music").attr('src','background.mp3');
-			$(".preload").hide();
-			$(".detail").show();						
-		}
-	});
-});
-</script>
 </body>
 </html>

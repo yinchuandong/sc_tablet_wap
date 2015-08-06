@@ -31,16 +31,16 @@ html {
 	perspective:1000;
 }
 
-.loading {
+.index-loading {
     color: #333;
     text-align: center;
     height: 90px;
     position: relative;
-    top: 12%;
+    top: 45%;
     margin-top: -45px
 }
 
-.loading .load-percent {
+.index-loading .load-percent {
     position: absolute;
     font-size: 12px;
     display: block;
@@ -54,7 +54,7 @@ html {
     top: 1.8em
 }
 
-.loading .load-tips {
+.index-loading .load-tips {
     padding: 0;
     margin: 10px 0;
     font-size: 12px
@@ -317,20 +317,7 @@ html {
 .product4 {
 	background-image: url(../images/index-product4@2x.png);
 }
-}.preload {
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-.loading-text {
-	margin-top: 20px;
-	text-align: center;
-}
-.loading {
-	display: block;
-	margin: 0 auto;
-	margin-top: 200px;
-}
+
 @keyframes fadeInUp {
 	0% {
 	opacity: 0;
