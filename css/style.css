@@ -347,13 +347,20 @@ html {
 	background-size: 176px 217px;
     display: block;
 }
-.list a img{
+.list2 a img{
+    width: 176px;
+    position: absolute;
+    left: 0;
+    top: 22%;
+}
+.list3 a img{
     width: 176px;
     height: 217px;
     position: absolute;
     left: 0;
     top: 0;
 }
+
 
 
 .area3 img{
