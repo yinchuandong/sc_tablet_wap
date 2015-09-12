@@ -156,7 +156,7 @@ html {
 }
 .search {
 	position: absolute;
-	width: 200px;
+	width: 220px;
 	text-align: center;
 	color: #fff;
 	font-size: 11px;
@@ -234,14 +234,7 @@ html {
 }.page2 {
 	background-image: url(../images/bg2.png)
 }
-.title {
-	position: absolute;
-	background-image: url(../images/title.png);
-	width: 179px;
-	height: 72px;
-	top: 0;
-	right: 0
-}
+
 .list {
 	position: absolute;
 	width: 320px;
@@ -257,25 +250,38 @@ html {
 	display: block;
 	margin-top: 600px;
 }
-.product1 {
-	background-image: url(../images/index-product1.png);
-	z-index: 20;
+
+.list2 .area1 {
+    background-image: url(../images/area1@2x.png);
+    left: 72px;
+    z-index: 20;
 }
-.product2 {
-	background-image: url(../images/index-product2.png);
-	left: 144px;
-	z-index: 10;
+.list2 .area2 {
+    background-image: url(../images/area2@2x.png);
+    left: 72px;
+    top: 220px;
+    z-index: 10;
 }
-.product3 {
-	background-image: url(../images/index-product3.png);
-	top: 184px;
-	z-index: 30;
+
+.list3 .area1 {
+    background-image: url(../images/area1@2x.png);
+    z-index: 20;
 }
-.product4 {
-	background-image: url(../images/index-product4.png);
-	left: 144px;
-	top: 184px;
-	z-index: 40;
+.list3 .area2 {
+    background-image: url(../images/area2@2x.png);
+    left: 144px;
+    z-index: 10;
+}
+.list3 .area3 {
+    background-image: url(../images/area3@2x.png);
+    top: 184px;
+    z-index: 30;
+}
+.list3 .area4 {
+    background-image: url(../images/area4@2x.png);
+    left: 144px;
+    top: 184px;
+    z-index: 40;
 }
 .list-animate {
 	animation: showList 1.2s ease-out forwards;
@@ -298,13 +304,62 @@ html {
 	.page2 {
 	background-image: url(../images/bg2@2x.png)
 }
-.title {
-	background-image: url(../images/title@2x.png);
-	background-size: 179px 72px;
+.type, .title {
+	font-size: 14px;
+    color: #000000;
+    position: absolute;
 }
+.type1, .type3{
+    left: 55px;
+    top: 15px;
+}
+
+.type2, .type4{
+    left: 70px;
+    top: 15px;
+}
+
+.title1, .title3{
+    left: 24px;
+    top: 30px;
+}
+.title2, .title4{
+    left: 35px;
+    top: 30px;
+}
+
+.detail{
+    font-size: 10px;
+    color: #000000;
+    position: absolute;
+    top: 168px;
+}
+
+.area1 .detail, .area3 .detail{
+    left: 22px;
+}
+.area2 .detail, .area4 .detail{
+    left: 35px;
+}
+
+
 .list a {
 	background-size: 176px 217px;
+    display: block;
 }
+.list a img{
+    width: 176px;
+    height: 217px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.area3 img{
+    top: 20px;
+}
+
 .product1 {
 	background-image: url(../images/index-product1@2x.png);
 }

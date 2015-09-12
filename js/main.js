@@ -5,7 +5,8 @@ var PageMain = {
 
     preloadImg: function() {
         var self = this;
-        var images = self.imgArr;
+        // var images = self.imgArr;
+        var images = [];
         var imgLen = images.length;
         if (window.devicePixelRatio >= 1.25) {
             for (var i = 0; i < imgLen; i++) {
@@ -17,16 +18,16 @@ var PageMain = {
         // console.log(self.imgArr)
 
         seajs.use('./js/imageLoader.js', function(loader) {
-            loader(images, function(percent) {
+            // loader(images, function(percent) {
 
                 //加载完一张图片之后的回调函数
-                $('.load-percent').text(Math.floor(percent * 100) + '%');
-                if (percent == 1) {
+                // $('.load-percent').text(Math.floor(percent * 100) + '%');
+                // if (percent == 1) {
                     //加载完所有图片之后
                     self.initPageScroll();
                     self.initPageOne();
-                }
-            });
+                // }
+            // });
 
         });
 
@@ -57,6 +58,9 @@ var PageMain = {
                             case 1:
                                 self.initPageTwo();
                                 break;
+                            case 2:
+                                self.initPageThree();
+                                break;
                             default:
                                 self.initPageOne();
                                 break;
@@ -84,7 +88,23 @@ var PageMain = {
         $(".android").removeClass("android-animate");
         $(".windows").removeClass("windows-animate");
         $(".text").removeClass("text-animate");
-        $("#j-list").children().each(function(index) {
+        $(".list").children().removeClass("list-animate");
+        $("#j-list-2").children().each(function(index) {
+            var $ele = $(this);
+            $ele.css({
+                'animation-delay': '0.' + 3 * index + 's',
+                '-webkit-animation-delay': '0.' + 3 * index + 's'
+            });
+            $ele.addClass("list-animate");
+        });
+    },
+
+     initPageThree: function() {
+        $(".android").removeClass("android-animate");
+        $(".windows").removeClass("windows-animate");
+        $(".text").removeClass("text-animate");
+        $(".list").children().removeClass("list-animate");
+        $("#j-list-3").children().each(function(index) {
             var $ele = $(this);
             $ele.css({
                 'animation-delay': '0.' + 3 * index + 's',
