@@ -14,5 +14,5 @@ var BGMusic = {
 
 
 $(document).ready(function(){
-	// BGMusic.init();
+	BGMusic.init();
 });
