@@ -1,6 +1,6 @@
 var PageMain = {
     imgUrl: './images/',
-    imgArr: ["8800.png", "9000.png", "9200.png", "9500.png", "9600.png", "9700.png", "android.png", "area1.png", "area2.png", "area3.png", "area4.png", "arrow.png", "bg1.png", "bg2.png", "btn-back.png", "btn-buy.png", "circle-android.png", "circle-microsoft.png", "detail_bg.png", "index-product1.png", "index-product2.png", "index-product3.png", "index-product4.png", "list.png", "logo.png", "picture1.png", "text.png", "title.png", "windows.png"],
+    imgArr: ["8800.png", "9000.png", "9200.png", "9500.png", "9600.png", "9700.png", "android.png", "area1.png", "area2.png", "area3.png", "area4.png", "arrow.png", "bg1.png", "bg2.png", "btn-back.png", "btn-buy.png", "circle-android.png", "circle-microsoft.png", "detail_bg.png", "logo.png", "picture1.png", "text.png", "title.png", "windows.png"],
 
     initIndex: 0,
 
