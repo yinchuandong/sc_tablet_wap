@@ -1,5 +1,4 @@
 @import url(phone-reset.css);
-
 body,
 html {
     margin: 0;
@@ -18,17 +17,17 @@ html {
     height: 100%
 }
 
-.gpu{
-	transform:translate3d(0,0,0);
-	-webkit-transform:translate3d(0,0,0);
-	-o-transform:translate3d(0,0,0);
-	-moz-transform:translate3d(0,0,0);
-	-webkit-backface-visibility:hidden;
-	-webkit-perspective:1000;
-	-moz-backface-visibility:hidden;
-	-moz-perspective:1000;
-	backface-visibility:hidden;
-	perspective:1000;
+.gpu {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-backface-visibility: hidden;
+    -moz-perspective: 1000;
+    backface-visibility: hidden;
+    perspective: 1000;
 }
 
 .index-loading {
@@ -107,148 +106,190 @@ html {
     overflow: hidden;
     background-size: cover;
 }
+
 .page1 {
-	background-image: url(../images/bg1.png)
+    background-image: url(../images/bg1.png)
 }
+
 .logo {
-	position: absolute;
-	background-image: url(../images/logo.png);
-	width: 68px;
-	height: 38px;
-	top: 20px;
-	left: 15px
+    position: absolute;
+    background-image: url(../images/logo.png);
+    width: 68px;
+    height: 38px;
+    top: 20px;
+    left: 15px
 }
+
 .android {
-	position: absolute;
-	background-image: url(../images/android.png);
-	width: 320px;
-	height: 226px;
-	right: -350px;
-	top: -300px
+    position: absolute;
+    background-image: url(../images/android.png);
+    width: 320px;
+    height: 226px;
+    right: -350px;
+    top: -300px;
 }
+
 .android-animate {
-	animation: Android 1.2s forwards;
-	-webkit-animation: Android 1.2s forwards
+    animation: Android 1.2s forwards;
+    -webkit-animation: Android 1.2s forwards;
 }
+
 .windows {
-	position: absolute;
-	background-image: url(../images/windows.png);
-	width: 320px;
-	height: 317px;
-	right: -350px;
-	top: -280px
+    position: absolute;
+    background-image: url(../images/windows.png);
+    width: 320px;
+    height: 317px;
+    right: -350px;
+    top: -280px;
 }
+
 .windows-animate {
-	animation: Windows 1.2s .2s forwards;
-	-webkit-animation: Windows 1.2s .2s forwards
+    animation: Windows 1.2s .2s forwards;
+    -webkit-animation: Windows 1.2s .2s forwards
 }
+
 .text {
-	position: absolute;
-	background-image: url(../images/text.png);
-	width: 320px;
-	height: 242px;
-	right: -350px;
-	top: -69px
+    position: absolute;
+    background-image: url(../images/text.png);
+    width: 320px;
+    height: 242px;
+    right: -350px;
+    top: -69px;
 }
+
 .text-animate {
-	animation: Text 1.2s .6s forwards;
-	-webkit-animation: Text 1.2s .6s forwards
+    animation: Text 1.2s .6s forwards;
+    -webkit-animation: Text 1.2s .6s forwards
 }
+
 .search {
-	position: absolute;
-	width: 220px;
-	text-align: center;
-	color: #fff;
-	font-size: 11px;
-	z-index: 50;
+    position: absolute;
+    width: 220px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    z-index: 50;
 }
+
 .page1 .search {
-	bottom: 14px;
-	left: 14px;
-	text-align: left
+    bottom: 14px;
+    left: 14px;
+    text-align: left
 }
+
 .arrow {
-	position: absolute;
-	background-image: url(../images/arrow.png);
-	width: 21px;
-	height: 21px;
-	right: 14px;
-	bottom: 10px;
-	animation: fadeInUp 1.5s .2s ease infinite;
-	-webkit-animation: fadeInUp 1.5s .2s infinite;
+    position: absolute;
+    background-image: url(../images/arrow.png);
+    width: 21px;
+    height: 21px;
+    right: 14px;
+    bottom: 10px;
+    animation: fadeInUp 1.5s .2s ease infinite;
+    -webkit-animation: fadeInUp 1.5s .2s infinite;
 }
+
 @keyframes Android {
-	100% {
-	right: 0;
-	top: 0
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-350px, 300px, 0);
+    }
 }
-}@keyframes Windows {
-	100% {
-	right: 0;
-	top: 20px
+
+@keyframes Windows {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-350px, 300px, 0);
+    }
 }
-}@keyframes Text {
-	100% {
-	right: 0;
-	top: 231px
+
+@keyframes Text {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-350px, 300px, 0);
+    }
 }
-}@-webkit-keyframes Android {
-	100% {
-	right: 0;
-	top: 0
+
+@-webkit-keyframes Android {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-350px, 300px, 0);
+    }
 }
-}@-webkit-keyframes Windows {
-	100% {
-	right: 0;
-	top: 20px
+
+@-webkit-keyframes Windows {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-350px, 300px, 0);
+    }
 }
-}@-webkit-keyframes Text {
-	100% {
-	right: 0;
-	top: 231px
+
+@-webkit-keyframes Text {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-350px, 300px, 0);
+    }
 }
-}@media only screen and (-webkit-min-device-pixel-ratio: 1.25),only screen and (min-resolution: 120dpi),only screen and (min-resolution: 1.25dppx) {
-	.page1 {
-	background-image: url(../images/bg1@2x.png)
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min-resolution: 120dpi),
+only screen and (min-resolution: 1.25dppx) {
+    .page1 {
+        background-image: url(../images/bg1@2x.png)
+    }
+    .logo {
+        background-image: url(../images/logo@2x.png);
+        background-size: 68px 38px;
+    }
+    .android {
+        background-image: url(../images/android@2x.png);
+        background-size: 320px 226px;
+    }
+    .windows {
+        background-image: url(../images/windows@2x.png);
+        background-size: 320px 317px;
+    }
+    .text {
+        background-image: url(../images/text@2x.png);
+        background-size: 320px 242px;
+    }
+    .arrow {
+        background-image: url(../images/arrow@2x.png);
+        background-size: 21px 21px;
+    }
 }
-.logo {
-	background-image: url(../images/logo@2x.png);
-	background-size: 68px 38px;
-}
-.android {
-	background-image: url(../images/android@2x.png);
-	background-size: 320px 226px;
-}
-.windows {
-	background-image: url(../images/windows@2x.png);
-	background-size: 320px 317px;
-}
-.text {
-	background-image: url(../images/text@2x.png);
-	background-size: 320px 242px;
-}
-.arrow {
-	background-image: url(../images/arrow@2x.png);
-	background-size: 21px 21px;
-}
-}.page2 {
-	background-image: url(../images/bg2.png)
+
+.page2 {
+    background-image: url(../images/bg2.png)
 }
 
 .list {
-	position: absolute;
-	width: 320px;
-	height: 401px;
-	left: 50%;
-	margin-left: -160px;
-	top: 72px;
+    position: absolute;
+    width: 320px;
+    height: 401px;
+    left: 50%;
+    margin-left: -160px;
+    top: 72px;
 }
+
 .list a {
-	position: absolute;
-	width: 176px;
-	height: 217px;
-	display: block;
-	margin-top: 600px;
+    position: absolute;
+    width: 176px;
+    height: 217px;
+    display: block;
+    transform: translate3d(0, 600px, 0);
+    -webkit-transform: translate3d(0, 600px, 0);
 }
 
 .list2 .area1 {
@@ -256,6 +297,7 @@ html {
     left: 72px;
     z-index: 20;
 }
+
 .list2 .area2 {
     background-image: url(../images/area2@2x.png);
     left: 72px;
@@ -267,93 +309,87 @@ html {
     background-image: url(../images/area1@2x.png);
     z-index: 20;
 }
+
 .list3 .area2 {
     background-image: url(../images/area2@2x.png);
     left: 144px;
     z-index: 10;
 }
+
 .list3 .area3 {
     background-image: url(../images/area3@2x.png);
     top: 184px;
     z-index: 30;
 }
+
 .list3 .area4 {
     background-image: url(../images/area4@2x.png);
     left: 144px;
     top: 184px;
     z-index: 40;
 }
-.list-animate {
-	animation: showList 1.2s ease-out forwards;
-	-webkit-animation: showList 1.2s ease-out forwards
-}
-.page2 .search {
-	bottom: 14px;
-	left: 50%;
-	margin-left: -100px
-}
-@keyframes showList {
-	100% {
-	margin-top: 0px
-}
-}@-webkit-keyframes showList {
-	100% {
-	margin-top: 0px
-}
-}@media only screen and (-webkit-min-device-pixel-ratio: 1.25),only screen and (min-resolution: 120dpi),only screen and (min-resolution: 1.25dppx) {
-	.page2 {
-	background-image: url(../images/bg2@2x.png)
-}
-.type, .title {
-	font-size: 14px;
+
+.type,
+.title {
+    font-size: 14px;
     color: #000000;
     position: absolute;
 }
-.type1, .type3{
+
+.type1,
+.type3 {
     left: 55px;
     top: 15px;
 }
 
-.type2, .type4{
+.type2,
+.type4 {
     left: 70px;
     top: 15px;
 }
 
-.title1, .title3{
+.title1,
+.title3 {
     left: 24px;
     top: 30px;
 }
-.title2, .title4{
+
+.title2,
+.title4 {
     left: 35px;
     top: 30px;
 }
 
-.detail{
+.detail {
     font-size: 10px;
     color: #000000;
     position: absolute;
     top: 168px;
 }
 
-.area1 .detail, .area3 .detail{
+.area1 .detail,
+.area3 .detail {
     left: 22px;
 }
-.area2 .detail, .area4 .detail{
+
+.area2 .detail,
+.area4 .detail {
     left: 35px;
 }
 
-
 .list a {
-	background-size: 176px 217px;
+    background-size: 176px 217px;
     display: block;
 }
-.list2 a img{
+
+.list2 a img {
     width: 176px;
     position: absolute;
     left: 0;
     top: 22%;
 }
-.list3 a img{
+
+.list3 a img {
     width: 176px;
     height: 217px;
     position: absolute;
@@ -361,41 +397,69 @@ html {
     top: 0;
 }
 
-
-
-.area3 img{
+.area3 img {
     top: 20px;
 }
 
-.product1 {
-	background-image: url(../images/index-product1@2x.png);
-}
-.product2 {
-	background-image: url(../images/index-product2@2x.png);
-}
-.product3 {
-	background-image: url(../images/index-product3@2x.png);
-}
-.product4 {
-	background-image: url(../images/index-product4@2x.png);
+.list-animate {
+    animation: showList 1.2s ease-out forwards;
+    -webkit-animation: showList 1.2s ease-out forwards
 }
 
-@keyframes fadeInUp {
-	0% {
-	opacity: 0;
-	transform: translateY(0px)
+.page2 .search {
+    bottom: 14px;
+    left: 50%;
+    margin-left: -100px
 }
-100% {
-	opacity: 1;
-	transform: translateY(-10px)
+
+@keyframes showList {
+    100% {
+        transform: translate3d(0, 0px, 0);
+    }
 }
-}@-webkit-keyframes fadeInUp {
-	0% {
-	opacity: 0;
-	-webkit-transform: translateY(0px)
+
+@-webkit-keyframes showList {
+    100% {
+        -webkit-transform: translate3d(0, 0px, 0);
+    }
 }
-100% {
-	opacity: 1;
-	-webkit-transform: translateY(-10px)
-}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min-resolution: 120dpi),
+only screen and (min-resolution: 1.25dppx) {
+    .page2 {
+        background-image: url(../images/bg2@2x.png)
+    }
+    .product1 {
+        background-image: url(../images/index-product1@2x.png);
+    }
+    .product2 {
+        background-image: url(../images/index-product2@2x.png);
+    }
+    .product3 {
+        background-image: url(../images/index-product3@2x.png);
+    }
+    .product4 {
+        background-image: url(../images/index-product4@2x.png);
+    }
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0, -10px, 0);
+        }
+    }
+    @-webkit-keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, -10px, 0);
+        }
+    }
 }
