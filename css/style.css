@@ -113,11 +113,19 @@ html {
 
 .logo {
     position: absolute;
-    background-image: url(../images/logo.png);
-    width: 68px;
-    height: 38px;
-    top: 20px;
-    left: 15px
+    /*background-image: url(../images/logo.png);*/
+    width: 200px;
+    height: 100px;
+    top: 0px;
+    left: 15px;
+    color: #fff;
+}
+.logo img{
+    width: 30px;height: 45px;float: left;
+}
+.logo p{
+    margin-top: 15px;
+    padding-left: 20px;
 }
 
 .android {
@@ -249,7 +257,7 @@ only screen and (min-resolution: 1.25dppx) {
         background-image: url(../images/bg1@2x.png)
     }
     .logo {
-        background-image: url(../images/logo@2x.png);
+        /*background-image: url(../images/logo@2x.png);*/
         background-size: 68px 38px;
     }
     .android {
@@ -364,12 +372,12 @@ only screen and (min-resolution: 1.25dppx) {
     font-size: 10px;
     color: #000000;
     position: absolute;
-    top: 168px;
+    top: 158px;
 }
 
 .area1 .detail,
 .area3 .detail {
-    left: 22px;
+    left: 5px;
 }
 
 .area2 .detail,
